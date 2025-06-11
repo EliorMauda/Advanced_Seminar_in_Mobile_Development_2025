@@ -1043,7 +1043,6 @@ We welcome feature requests! Please:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
-https://eliormauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/
 
 - **Documentation**: [GitHub Pages](https://EliorMauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/)
 - **Issues**: [GitHub Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)
