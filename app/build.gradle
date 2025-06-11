@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.objectdetection.example'
+    compileSdkVersion 35
+
+    defaultConfig {
+        applicationId "com.objectdetection.example"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+}
+
+dependencies {
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //implementation(name: 'android-sdk-release', ext: 'aar')
+    implementation libs.android.object1.detection.sdk
+
+    // AndroidX
+    implementation libs.appcompat.v161
+    implementation libs.constraintlayout.v214
+    implementation libs.material.v190
+
+    // Image loading library
+    implementation libs.glide
+    implementation libs.preference
+    implementation libs.camera.view
+    annotationProcessor libs.compiler
+
+    // Runtime permission handling
+    implementation libs.easypermissions
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.junit.v115
+    androidTestImplementation libs.espresso.core.v351
+
+    implementation libs.okhttp
+    implementation libs.gson
+
+    def camerax_version = "1.4.2"
+    implementation libs.camera.core
+    implementation libs.camera.camera2
+    implementation libs.camera.lifecycle
+    implementation libs.camera.view
+    implementation libs.camera.extensions
+
+    implementation libs.retrofit
+    implementation libs.converter.gson
+}
+
+configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'org.jetbrains.kotlin') {
+            details.useVersion '1.8.22'
+        }
+    }
+}
