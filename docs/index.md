@@ -1043,10 +1043,11 @@ We welcome feature requests! Please:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
+https://eliormauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/
 
-- **Documentation**: [GitHub Pages](https://your-username.github.io/object-detection-platform/)
-- **Issues**: [GitHub Issues](https://github.com/your-username/object-detection-platform/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/object-detection-platform/discussions)
+- **Documentation**: [GitHub Pages](https://EliorMauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/)
+- **Issues**: [GitHub Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/discussions)
 
 ---
 
