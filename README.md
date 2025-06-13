@@ -91,166 +91,43 @@ graph TB
 
 | Main Menu | Live Detection | Results View |
 |-----------|----------------|--------------|
-| ![Main Menu](https://via.placeholder.com/200x350/4CAF50/white?text=Main+Menu) | ![Live Detection](https://via.placeholder.com/200x350/2196F3/white?text=Live+Detection) | ![Results](https://via.placeholder.com/200x350/FF9800/white?text=Detection+Results) |
+| ![Main Menu](https://github.com/user-attachments/assets/4e055fe2-2b69-4fc2-bdfc-2bf7a5608d51) | ![Live Detection](https://github.com/user-attachments/assets/affe2fa5-9c9b-49b4-81f0-40a3b0011daa) | ![Results](https://github.com/user-attachments/assets/8d335d49-758c-40a3-bf47-b74fad1ce91a) |
 
 ### 🌐 Web Dashboard
 
-![Portal1](https://github.com/user-attachments/assets/1faa615b-a4cd-49c1-8c7d-c68a11ead664)
-![Portal2](https://github.com/user-attachments/assets/502e1fec-a2cd-4161-8c81-bc74467741c0)
-![Portal3](https://github.com/user-attachments/assets/afac89a2-8d3b-4e6f-afec-5446ad61fdc3)
-![Portal4](https://github.com/user-attachments/assets/a46e2da4-9d02-4399-8d58-dc1690a21e7d)
-![Portal5](https://github.com/user-attachments/assets/5c8f39e2-5eeb-493c-ba8b-2da2fbc318b0)
-![Portal6](https://github.com/user-attachments/assets/34a0f47c-e464-4201-a7eb-062689164e53)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1faa615b-a4cd-49c1-8c7d-c68a11ead664" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/502e1fec-a2cd-4161-8c81-bc74467741c0" width="45%"/><br>
+  <img src="https://github.com/user-attachments/assets/afac89a2-8d3b-4e6f-afec-5446ad61fdc3" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/a46e2da4-9d02-4399-8d58-dc1690a21e7d" width="45%"/><br>
+  <img src="https://github.com/user-attachments/assets/5c8f39e2-5eeb-493c-ba8b-2da2fbc318b0" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/34a0f47c-e464-4201-a7eb-062689164e53" width="45%"/>
+</p>
 
-[Portal video](https://github.com/user-attachments/assets/5502927b-8e82-44cc-abae-c89344c2165b)
+🎥 **Demo Video** 
+[Click here to watch the entire Web Dashboard](https://github.com/user-attachments/assets/5502927b-8e82-44cc-abae-c89344c2165b)
 
 
 *Real-time analytics dashboard with live metrics and detection management*
 
 ### 🎯 Detection Examples
 
-| Original Image | Detection Result |
-|----------------|------------------|
-| ![Original](https://via.placeholder.com/300x200/607D8B/white?text=Original+Image) | ![Detected](https://via.placeholder.com/300x200/4CAF50/white?text=Objects+Detected) |
+<table>
+  <tr>
+    <th>Original Image</th>
+    <th>Detection Result</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/5d48fd8b-9752-4b00-bba2-3a5c7c2b8b16" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/3e403fa1-11e6-4673-b8b4-fdf28ec7b522" width="300"/></td>
+  </tr>
+</table>
 
-*Example: Person detection with 94.7% confidence*
-
----
-
-## 🚀 Quick Start
-
-Get up and running in 5 minutes!
-
-### Prerequisites
-
-- ☕ Java 11 or higher
-- 📱 Android Studio Arctic Fox+
-- 🟢 Node.js 14+
-- 🔑 [Hugging Face API Token](https://huggingface.co/settings/tokens)
-- ☁️ [Cloudinary Account](https://cloudinary.com/) (optional)
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025.git
-cd Advanced_Seminar_in_Mobile_Development_2025
-```
-
-### 2️⃣ Start the API Service
-
-```bash
-cd backend-api
-export HUGGINGFACE_API_TOKEN=your_token_here
-./mvnw spring-boot:run
-```
-
-🚀 **API available at:** `http://localhost:8080`
-
-### 3️⃣ Launch the Dashboard
-
-```bash
-cd dashboard-portal
-npm install
-npm start
-```
-
-🌐 **Dashboard available at:** `http://localhost:3000`
-
-### 4️⃣ Test Your Setup
-
-1. Open the dashboard at `http://localhost:3000`
-2. Upload an image or paste an image URL
-3. Watch the magic happen! ✨
-
----
-
-## 📱 Android Integration
-
-### Quick Integration
-
-Add to your `build.gradle`:
-
-```gradle
-dependencies {
-    implementation 'com.github.EliorMauda:android-object-detection-sdk:v0.1.5'
-}
-```
-
-### Initialize & Use
-
-```java
-// In your Application class
-ImageDetector.init("https://your-api-url.com");
-
-// Detect from image file
-ImageDetector.detectFromFile(imageFile, new ImageDetectionListener() {
-    @Override
-    public void onResult(DetectionResult result) {
-        // Handle detection results
-        List<DetectedObject> objects = result.getDetectedObjects();
-        updateUI(objects);
-    }
-    
-    @Override
-    public void onError(Exception e) {
-        Log.e(TAG, "Detection failed", e);
-    }
-});
-```
-
-### Live Camera Detection
-
-```java
-// Start live detection
-ImageDetector.startLiveDetection(this, previewView, new LiveDetectionListener() {
-    @Override
-    public void onDetectionResult(DetectionResult result, long frameTimestamp) {
-        runOnUiThread(() -> updateOverlay(result));
-    }
-});
-```
-
----
-
-## 🌐 API Usage
-
-### Upload Image
-
-```bash
-curl -X POST http://localhost:8080/api/detect \
-  -H "Content-Type: multipart/form-data" \
-  -F "image=@your_image.jpg"
-```
-
-### Detect from URL
-
-```bash
-curl -X POST http://localhost:8080/api/detect/url \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://example.com/image.jpg"}'
-```
-
-### Response Format
-
-```json
-{
-  "imageUrl": "https://res.cloudinary.com/demo/image/upload/...",
-  "detectedObjects": [
-    {
-      "label": "person",
-      "confidence": 0.9847,
-      "box": {
-        "xMin": 0.123,
-        "yMin": 0.456,
-        "xMax": 0.789,
-        "yMax": 0.834
-      }
-    }
-  ],
-  "processingTimeMs": 1250,
-  "error": null
-}
-```
+*Example: spoon detection with 99.7% confidence*  
+*Example: spoon detection with 99.5% confidence*  
+*Example: fork detection with 99.2% confidence*  
+*Example: knife detection with 87.5% confidence*  
+*Example: dining table detection with 61.3% confidence*
 
 ---
 
@@ -276,133 +153,6 @@ curl -X POST http://localhost:8080/api/detect/url \
 
 ---
 
-## 🛠️ Installation
-
-### Development Setup
-
-#### Backend API
-
-```bash
-cd backend-api
-
-# Set environment variables
-export HUGGINGFACE_API_TOKEN=your_token
-export CLOUDINARY_CLOUD_NAME=your_cloud_name
-export CLOUDINARY_API_KEY=your_api_key
-export CLOUDINARY_API_SECRET=your_api_secret
-
-# Run development server
-./mvnw spring-boot:run
-```
-
-#### Dashboard Portal
-
-```bash
-cd dashboard-portal
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-#### Android SDK
-
-```gradle
-// Add to your app/build.gradle
-dependencies {
-    implementation 'com.github.EliorMauda:android-object-detection-sdk:v0.1.5'
-}
-
-// Add to your project/build.gradle
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-### Production Deployment
-
-#### 🐳 Docker Compose
-
-```yaml
-version: '3.8'
-services:
-  api:
-    build: ./backend-api
-    ports:
-      - "8080:8080"
-    environment:
-      - HUGGINGFACE_API_TOKEN=${HUGGINGFACE_API_TOKEN}
-      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
-      - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY}
-      - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET}
-  
-  dashboard:
-    build: ./dashboard-portal
-    ports:
-      - "3000:3000"
-    depends_on:
-      - api
-```
-
-```bash
-docker-compose up -d
-```
-
-#### ☁️ Railway Deployment
-
-1. Connect your GitHub repository to [Railway](https://railway.app)
-2. Set environment variables in Railway dashboard
-3. Deploy API service from `backend-api` directory
-4. Deploy dashboard from `dashboard-portal` directory
-
----
-
-## 🔧 Configuration
-
-### Environment Variables
-
-#### API Service
-
-```bash
-# Required
-HUGGINGFACE_API_TOKEN=hf_your_token_here
-
-# Optional (for image storage)
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key  
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Server settings
-SERVER_PORT=8080
-```
-
-#### Dashboard
-
-```bash
-PORT=3000
-NODE_ENV=production
-API_BASE_URL=https://your-api-domain.com/api
-```
-
-### Android SDK Configuration
-
-```java
-// Initialize in your Application class
-public class MyApplication extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        ImageDetector.init("https://object-detection-api-production.up.railway.app");
-    }
-}
-```
-
----
-
 ## 📱 Android Example App
 
 The included example app demonstrates all SDK capabilities:
@@ -414,48 +164,6 @@ The included example app demonstrates all SDK capabilities:
 - **🔗 URL Processing** - Analyze images from web URLs
 - **⚙️ Settings Management** - Configure API endpoints and preferences
 - **📊 Results Display** - Detailed detection results with confidence scores
-
-### Building the Example
-
-```bash
-cd android-example-app
-
-# Build debug APK
-./gradlew assembleDebug
-
-# Install on connected device
-adb install app/build/outputs/apk/debug/app-debug.apk
-```
-
-### Key Implementation Examples
-
-#### MainActivity - Entry Point
-```java
-public class MainActivity extends AppCompatActivity {
-    private static final String DEFAULT_API_URL = 
-        "https://object-detection-api-production.up.railway.app";
-    
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initializeSDK();
-        setupDetectionButtons();
-    }
-}
-```
-
-#### Live Detection Activity
-```java
-private void startLiveDetection() {
-    ImageDetector.startLiveDetection(this, previewView, 
-        new LiveDetectionListener() {
-            @Override
-            public void onDetectionResult(DetectionResult result, long timestamp) {
-                runOnUiThread(() -> overlayView.updateDetections(result));
-            }
-        });
-}
-```
 
 ---
 
@@ -478,89 +186,6 @@ private void startLiveDetection() {
 - **📚 Comprehensive Docs** - Detailed guides and examples
 
 ---
-
-## 🧪 Testing
-
-### API Testing
-
-```bash
-# Run unit tests
-cd backend-api
-./mvnw test
-
-# Integration tests
-./mvnw test -Dtest=DetectionControllerIT
-```
-
-### Android SDK Testing
-
-```bash
-cd android-sdk
-./gradlew test
-./gradlew connectedAndroidTest
-```
-
-### Dashboard Testing
-
-```bash
-cd dashboard-portal
-npm test
-npm run test:e2e
-```
-
----
-
-## 🚨 Troubleshooting
-
-### Common Issues & Solutions
-
-#### 🔌 Connection Issues
-
-**Problem**: `Connection refused` when calling API
-
-```bash
-# Check if API is running
-curl http://localhost:8080/api/detect/health
-
-# Expected response: {"status":"UP"}
-```
-
-#### 🔑 Authentication Issues
-
-**Problem**: `Invalid Hugging Face token`
-
-```bash
-# Verify your token
-curl -H "Authorization: Bearer YOUR_TOKEN" \
-  https://huggingface.co/api/whoami
-```
-
-#### 📱 Android Integration Issues
-
-**Problem**: `ImageDetector not initialized`
-
-```java
-// Solution: Initialize in Application class
-public class MyApplication extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        ImageDetector.init("https://your-api-url.com");
-    }
-}
-```
-
-#### 🎨 Overlay Alignment Issues
-
-**Problem**: Detection boxes not aligned with objects
-
-```java
-// Solution: Use proper coordinate transformation
-overlayView.setDetectionResult(result, 
-    frameWidth, frameHeight,        // Original camera resolution
-    displayWidth, displayHeight,    // Preview display size
-    offsetX, offsetY);             // Letterbox offsets
-```
 
 ### Performance Optimization
 
@@ -620,7 +245,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 - 🐛 **[Report Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)**
 - 💬 **[Discussions](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/discussions)**
 - 🤖 **[Hugging Face DETR Model](https://huggingface.co/facebook/detr-resnet-50)**
-- ☁️ **[Live Demo API](https://object-detection-api-production.up.railway.app)**
 
 ---
 
@@ -643,8 +267,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ---
 
-**Built with ❤️ by [Elior Mauda](https://github.com/EliorMauda)**
-
-*Object Detection Platform - Making AI accessible to everyone*
+**Built by [Elior Mauda](https://github.com/EliorMauda)**
 
 ⭐ **Star this repository if you found it helpful!** ⭐
