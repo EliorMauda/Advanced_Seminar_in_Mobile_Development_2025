@@ -9,11 +9,19 @@
 
 **A comprehensive real-time object detection platform with AI-powered image analysis**
 
-[🚀 Quick Start](#quick-start) •
-[📖 Documentation](https://EliorMauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/) •
-[🔧 Installation](#installation) •
-[💻 Demo](#demo) •
-[🤝 Contributing](#contributing)
+## 📚 Table of Contents
+
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Demo](#-demo)
+- [Dashboard Features](#-dashboard-features)
+- [Android Example App](#-android-example-app)
+- [Use Cases](#-use-cases)
+- [Performance Optimization](#-performance-optimization)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Links & Resources](#-links--resources)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
