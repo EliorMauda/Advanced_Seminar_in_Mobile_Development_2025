@@ -256,12 +256,12 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## 🔗 Links & Resources
 
+- 🔌 **[Api GitHub](https://github.com/EliorMauda/object-detection-api)**
+- 📦 **[SDK GitHub](https://github.com/EliorMauda/android-object-detection-sdk)**
+- 🧭 **[Portal GitHub](https://github.com/EliorMauda/object-detection-portal)**
 - 🐛 **[Report Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)**
 - 💬 **[Discussions](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/discussions)**
 - 🤖 **[Hugging Face DETR Model](https://huggingface.co/facebook/detr-resnet-50)**
-- 🧭 **[Portal GitHub](https://github.com/EliorMauda/object-detection-portal)**
-- 🔌 **[Api GitHub](https://github.com/EliorMauda/object-detection-api)**
-- 📦 **[SDK GitHub](https://github.com/EliorMauda/android-object-detection-sdk)**
 
 
 ---
