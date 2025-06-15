@@ -12,7 +12,6 @@
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
-- [Architecture](#architecture)
 - [Demo](#-demo)
 - [Dashboard Features](#-dashboard-features)
 - [Android Example App](#-android-example-app)
@@ -38,8 +37,6 @@ The Object Detection Platform is a full-stack solution that brings AI-powered ob
 - 🤖 **AI-Powered** - Facebook's DETR model via Hugging Face integration
 - ☁️ **Cloud Ready** - Scalable architecture with Cloudinary storage
 - 📊 **Analytics** - Real-time metrics and detection history tracking
-
----
 
 ## 🏗️ Architecture  
 
