@@ -12,6 +12,7 @@
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
+- [Technical Documentation](#-technical-documentation)
 - [Demo](#-demo)
 - [Dashboard Features](#-dashboard-features)
 - [Android Example App](#-android-example-app)
@@ -27,6 +28,15 @@
 ## 🌟 Overview
 
 The Object Detection Platform is a full-stack solution that brings AI-powered object detection to your fingertips. Built with modern technologies and designed for scalability, it offers seamless integration across web and mobile platforms.
+
+---
+
+## 📖 Technical Documentation
+
+For full setup instructions, API reference, architecture details, and deployment guides, please visit the full documentation:  
+👉 **[View Full Documentation](https://EliorMauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/)**
+
+---
 
 ### ✨ Key Features
 
@@ -246,7 +256,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## 🔗 Links & Resources
 
-- 📖 **[Complete Documentation](https://EliorMauda.github.io/Advanced_Seminar_in_Mobile_Development_2025/)**
 - 🐛 **[Report Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)**
 - 💬 **[Discussions](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/discussions)**
 - 🤖 **[Hugging Face DETR Model](https://huggingface.co/facebook/detr-resnet-50)**
