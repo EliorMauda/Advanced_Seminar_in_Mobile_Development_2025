@@ -12,12 +12,12 @@
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
-- [Architecture](#-architecture)
+- [Architecture](#architecture)
 - [Demo](#-demo)
 - [Dashboard Features](#-dashboard-features)
 - [Android Example App](#-android-example-app)
 - [Use Cases](#-use-cases)
-- [Performance Optimization](#-performance-optimization)
+- [Performance Optimization](#performance-optimization)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Links & Resources](#-links--resources)
@@ -41,7 +41,7 @@ The Object Detection Platform is a full-stack solution that brings AI-powered ob
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture  
 
 ```mermaid
 graph TB
@@ -253,9 +253,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 - 🐛 **[Report Issues](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/issues)**
 - 💬 **[Discussions](https://github.com/EliorMauda/Advanced_Seminar_in_Mobile_Development_2025/discussions)**
 - 🤖 **[Hugging Face DETR Model](https://huggingface.co/facebook/detr-resnet-50)**
-- **[Portal GitHub](https://github.com/EliorMauda/object-detection-portal)**
-- **[Api GitHub](https://github.com/EliorMauda/object-detection-api)**
-- **[SDK GitHub](https://github.com/EliorMauda/android-object-detection-sdk)**
+- 🧭 **[Portal GitHub](https://github.com/EliorMauda/object-detection-portal)**
+- 🔌 **[Api GitHub](https://github.com/EliorMauda/object-detection-api)**
+- 📦 **[SDK GitHub](https://github.com/EliorMauda/android-object-detection-sdk)**
 
 
 ---
